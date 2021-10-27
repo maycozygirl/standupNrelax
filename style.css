@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+body { 
+    padding: 15px;
+    font-family: 'Kanit', sans-serif;
+    background-color: #FEF1E6;
+}
+canvas{
+    display: block;
+    margin: auto;  
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.button:hover {
+    background-color: #FFB085
+}
+
+.button:active {
+    background-color: #FFB085;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+b{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+b:hover {
+    background-color: #FFB085
+}
+
+c{
+    background-color:#FFB085;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+}
+
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h4{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+}
+
+#nextbutton{
+    opacity: 0;
+    margin-top: 50px;
+}
+
+#popup{
+    position: fixed;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px ;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+img{
+    max-width: 100%;
+}
