@@ -8,6 +8,7 @@ body {
 canvas{
     display: block;
     margin: auto;  
+    margin-top: 20px;
 }
 
 .center {
@@ -96,24 +97,17 @@ h2{
     text-align: center;
 }
 
-h3{
-    font-size: 25px;
+
+h4{
+    font-size: 40px;
     font-family: 'Kanit', sans-serif;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-h4{
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
 
 }
 
 #nextbutton{
     opacity: 0;
-    margin-top: 50px;
 }
 
 #popup{
@@ -140,3 +134,9 @@ h4{
 img{
     max-width: 100%;
 }
+
+a{
+    margin-top: 50px;
+    text-decoration: none;
+}
+

@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="container" id="blur"> 
-        <h1>ท่าสุดท้าย มายืดคอ กันดีกว่า</h1>
+        <h1>ท่าสุดท้าย</h1>
         <h2>นำมือประสานไว้ที่ท้ายทอย กางแขนออก และก้มหัวลงพร้อมนำแขนหุบลง</h2>
              <div class="wrap"> 
-                 <button class ="button" type="button" onclick="init()">ไปกันเลยย</button>
-                 <b class="b" href="#" onclick="toggle()">ดูรูปภาพ</b>
+                 <button class ="button" type="button" onclick="init()">เริ่มได้ !</button>
+                 <b class="b" href="#" onclick="toggle()">ภาพประกอบ</b>
             </div>
     </div>
 
@@ -29,8 +29,6 @@
             popup.classList.toggle('active')
         }
     </script>
-   
-    <h3 id="pressbut"></h3>
 
     <div><canvas id="canvas"></canvas></div>
     <div id="label-container"></div>
@@ -112,10 +110,10 @@
                     num = count++
                     document.getElementById("count").innerHTML = num;
                     if (num == 10){
-                    document.getElementById("pressbut").innerHTML = "เก่งมาก สู้ ๆ ฮึบ ";
+                    document.getElementById("count").innerHTML = "เก่งมาก สู้ ๆ ฮึบ ";
                     }
                     if (num == 20){
-                    document.getElementById("pressbut").innerHTML = "เย้ จบแล้วว ถ้าเมื่อยอีกมายืดเส้นด้วยกันใหม่ได้นะะ";
+                    document.getElementById("count").innerHTML = "เย้ จบแล้วว ถ้าเมื่อยอีกมายืดเส้นด้วยกันใหม่ได้นะะ";
                     document.getElementById("nextbutton").style.opacity = "100%"
                     }
                 }
@@ -141,9 +139,10 @@
     </script>
 
     <h4 id="count"></h4>
-    <div id="nextbutton" class="center">
-        <a href="index.html"><button>เริ่มต้นใหม่</button></a>
-    </div>
+
+    <a href="exercise1.html" id="nextbutton"class="center" >
+        <button class ="button" type="button" >เริ่มต้นใหม่</button>
+    </a>
     
     
 

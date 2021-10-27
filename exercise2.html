@@ -13,8 +13,8 @@
         <h1>ท่าที่ 2</h1>
         <h2>ตั้งแขนสองข้างตรงหน้า แหวกแขนออกข้างลำตัว</h2>
              <div class="wrap"> 
-                 <button class ="button" type="button" onclick="init()">ไปกันเลยย</button>
-                 <b class="b" href="#" onclick="toggle()">ดูรูปภาพ</b>
+                 <button class ="button" type="button" onclick="init()">เริ่มได้ !</button>
+                 <b class="b" href="#" onclick="toggle()">ภาพประกอบ</b>
             </div>
     </div>
 
@@ -32,7 +32,6 @@
     </script>
    
 
-    <h3 id="pressbut"></h3>
 
     <div><canvas id="canvas"></canvas></div>
     <div id="label-container"></div>
@@ -113,10 +112,10 @@
                     num = count++
                     document.getElementById("count").innerHTML = num;
                     if (num == 10){
-                    document.getElementById("pressbut").innerHTML = "เก่งมาก สู้ ๆ ฮึบ ";
+                    document.getElementById("count").innerHTML = "สู้ ๆ เหลืออีกแค่ 10 ครั้ง ";
                     }
                     if (num == 20){
-                    document.getElementById("pressbut").innerHTML = "เป็นไงบ้างสบายขึ้นมั้ย !!";
+                    document.getElementById("count").innerHTML = "สบายตัวขึ้นมั้ย ไปท่าสุดท้ายกันเลย";
                     document.getElementById("nextbutton").style.opacity = "100%"
                     }
                 }
@@ -142,9 +141,9 @@
     </script>
 
     <h4 id="count"></h4>
-    <div id="nextbutton" class="center">
-        <a href="exercise3.html"><button>ท่าสุดท้ายแล้วว</button></a>
-    </div>
+    <a href="exercise3.html" id="nextbutton"class="center" >
+        <button class ="button" type="button" >ท่าสุดท้าย</button>
+    </a>
     
     
 
